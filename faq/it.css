@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(235, 189, 196);
+    padding: 30px;
+    margin: 30px 30px;
+    line-height: 1.8rem;
+    font-family: sans-serif;
+}
+.accordiam{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.question{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.icon{
+    margin-right: 8px;
+    transition: transform 0.2s;
+}
+.icon.active{
+    transform: rotate(-180deg);
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer.active{
+    max-height: max-content;
+}
